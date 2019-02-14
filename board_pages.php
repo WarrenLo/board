@@ -11,6 +11,8 @@
       if($page != 1){
         $page_previous = $page-1;
         echo "<a href='./board.php?page=$page_previous' class='page' style='line-height: 30px'>&lt</a>";
+      }else if($page == 1){
+        echo "<div class='page' style='line-height: 30px; cursor: not-allowed'>&lt</div>";
       }
       for($page_num = 1; $page_num <= $total_pages; $page_num++){
         if($page_num == $page){
@@ -22,6 +24,8 @@
       if($page != $total_pages){
         $page_next = $page+1;
         echo "<a href='./board.php?page=$page_next' class='page' style='line-height: 30px'>&gt</a>";
+      }else if($page == $total_pages){
+        echo "<div class='page' style='line-height: 30px; cursor: not-allowed'>&gt</div>";
       }
     }
   ?>

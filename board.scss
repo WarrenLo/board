@@ -300,7 +300,7 @@ a{
     background: #fff;
     display: inline-block;
     font-family: $font-family__main;
-    font-size: $height__create-board*0.2;
+    font-size: $height__create-board*0.16;
     &:focus{
       border-bottom: 1.5px solid $color__main;
       &::placeholder{

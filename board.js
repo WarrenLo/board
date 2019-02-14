@@ -41,12 +41,14 @@ document.addEventListener('DOMContentLoaded', function(){
       comment.edit(btn.target, '.comment-sub')
     }
 
-    else if(btn.target.classList.contains('comment-sub__create--msg')){
-      textarea_autosize(btn.target);
+    else if(btn.target.classList.contains('board__create--msg')){
+      textarea_autosize(btn.target, '100px');
+    }else if(btn.target.classList.contains('comment-sub__create--msg')){
+      textarea_autosize(btn.target, '30px');
     }else if(btn.target.classList.contains('comment-main__edit--msg')){
-      textarea_autosize(btn.target);
+      textarea_autosize(btn.target, '30px');
     }else if(btn.target.classList.contains('comment-sub__edit--msg')){
-      textarea_autosize(btn.target);
+      textarea_autosize(btn.target, '30px');
     }
 
   })
@@ -348,11 +350,11 @@ function clickBtn(){
   }
 }
 
-function textarea_autosize(target){
-  target.style.height = textarea_height;
+function textarea_autosize(target, initial_height){
+  target.style.height = initial_height;
   target.style.height = target.scrollHeight + 'px';
   target.addEventListener('keyup', function(){
-    this.style.height = textarea_height; // 把高度歸零
+    this.style.height = initial_height; // 把高度歸零
     this.style.height = this.scrollHeight + 'px'; // 再根據目前 scrollHeight，調整 textarea 的高度
 
   })

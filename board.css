@@ -249,7 +249,7 @@ a {
   background: #fff;
   display: inline-block;
   font-family: "Quicksand", "Microsoft JhengHei";
-  font-size: 20px;
+  font-size: 16px;
 }
 .board__create--msg:focus {
   border-bottom: 1.5px solid #00dddd;
