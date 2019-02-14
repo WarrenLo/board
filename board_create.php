@@ -9,6 +9,5 @@
   </div>
   <textarea class='board__create--msg' value='' placeholder='Leave your message here' name='comment'></textarea>
   <input type='hidden' class='parent_id' name='parent_id' value='0' />
-  <div class='board__create--cancel'>CANCEL</div>
   <input type='button' value='COMMENT' class='board__create--submit'></input>
 </form>
