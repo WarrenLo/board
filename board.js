@@ -157,7 +157,7 @@ function Comment(){
                     `  + name +  `
                   </div>
                 </div>
-                <textarea class='comment-main__edit--msg' name='comment' required=''>`  + escape(comment) +  `</textarea>
+                <textarea class='comment-main__edit--msg' name='comment' required=''>`  + comment +  `</textarea>
                 <input class='id' type='hidden' name='id' value='` + resp.id + `' />
                 <div class='comment-main__edit--cancel'>CANCEL</div>
                 <input type='button' value='EDIT' class='comment-main__edit--submit'></input>
@@ -234,7 +234,7 @@ function Comment(){
                   `  + name +  `
                 </div>
               </div>
-              <textarea class='comment-sub__edit--msg' name='comment' required=''>`  + escape(comment) +  `</textarea>
+              <textarea class='comment-sub__edit--msg' name='comment' required=''>`  + comment +  `</textarea>
               <input class='id' type='hidden' name='id' value='` + resp.id + `' />
               <div class='comment-sub__edit--cancel'>CANCEL</div>
               <input type='button' value='EDIT' class='comment-sub__edit--submit'></input>
